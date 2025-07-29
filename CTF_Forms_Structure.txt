@@ -1,0 +1,438 @@
+MICROSOFT FORMS STRUCTURE FOR CHECKMARX CTF CHALLENGES
+=========================================================
+
+Section 1: Participant Information
+1. Enter Username
+   Type: Text
+   
+2. Select CTF Challenge Completed
+   Type: Multiple Choice (Allow multiple selections)
+   Options: Supply Chain Detective, Vulnerability Hunter, Security Development Lead
+
+
+Section 2: CTF 1 - Supply Chain Detective (TotallySecure)
+=========================================================
+
+2.1 Investigation Flag 1: Critical Package Analysis
+
+1. Highest severity vulnerability type found in TotallySecure's SCA Results
+   Type: Multiple Choice
+   Options: Critical, High, Medium, Low
+
+2. Total critical vulnerability count found
+   Type: Text
+   Subtitle: The value must be a number
+
+3. Of the High findings in the Maven-mysql:mysql-connector-java-5.1.26 package, what is the lowest CVSS 3 score?
+   Type: Multiple Choice
+   Options: 7.0, 7.5, 8.0, 8.3
+
+4. Transitive dependency analysis
+   Type: Long Text
+   Subtitle: A critical vulnerability (Cxdca8e59f-8bfe) is introduced into the project via the transitive package inflight@1.0.6. Which top-level dependency is responsible for introducing this vulnerable package? On which line is that dependency defined in the file?
+
+5. Advanced Filter Combination Challenge
+   Type: Text
+   Subtitle: Use multiple simultaneous filters to find: Critical SCA vulnerabilities + High confidence + Introduced in last 30 days + Affecting .jar files only. How many results?
+
+11. Navigation Efficiency Test - Method
+    Type: Long Text
+    Subtitle: Document your exact navigation sequence and any shortcuts used
+
+12. Custom View Configuration
+    Type: Long Text
+    Subtitle: Create most efficient view for daily SCA triage. Format: Grouping method | Sort order | Default filters | Custom view name
+
+
+15. Search Query 1 Results
+    Type: Text
+    Subtitle: Search for vulnerabilities with "injection" in description. Search query used and results count.
+
+16. Search Query 2 Results
+    Type: Text
+    Subtitle: Search for vulnerabilities affecting packages with "spring" in name. Search query used and results count.
+
+17. Search Query 3 Results
+    Type: Text
+    Subtitle: Search for vulnerabilities from dependencies containing "apache". Search query used and results count.
+
+18. Most Effective Search Strategy
+    Type: Long Text
+    Subtitle: What was your most effective search strategy discovered during analysis?
+
+19. Bulk Actions Available
+    Type: Multiple Choice (Allow multiple selections)
+    Options: Mark as Not Exploitable, Assign to Developer, Export Results, Filter by Selection, Group Operations, Custom Status, Other
+
+20. Bulk Action Workflow Efficiency
+    Type: Long Text
+    Subtitle: Describe most efficient bulk action workflow and time saved vs individual actions
+
+21. Data Export Formats Available
+    Type: Multiple Choice (Allow multiple selections)
+    Options: JSON, CSV, XML, PDF, Excel, Text Report, Custom Format
+
+22. Best Export Format for Development Teams
+    Type: Multiple Choice
+    Options: JSON, CSV, XML, PDF, Excel, Text Report
+
+23. Export Format Analysis
+    Type: Long Text
+    Subtitle: Why is this the best format for development teams and what integration options exist?
+
+24. Real-time Scanning Behavior Analysis
+    Type: Long Text
+    Subtitle: Trigger new scan and document interface behavior during active scanning
+
+25. Performance Analysis with Large Result Sets
+    Type: Text
+    Subtitle: Test with large result sets. At what results count does performance degrade?
+
+26. Interface Optimization Strategies
+    Type: Long Text
+    Subtitle: What optimization settings did you find and recommended workflow for large projects?
+
+2.2 Investigation Flag 2: Malicious Package Detection  
+1. Suspicious package identified
+   Type: Text
+   Subtitle: Name of the potentially malicious package
+
+2. Suspicious indicators found
+   Type: Multiple Choice (Allow multiple selections)
+   Options: TypoSquatting, Unusual Dependencies, Suspicious Code Patterns, Unknown Maintainer, Recent Creation Date, Other
+
+3. Risk assessment level
+   Type: Multiple Choice
+   Options: Critical Risk, High Risk, Medium Risk, Low Risk, Not Malicious
+
+4. Evidence description
+   Type: Long Text
+   Subtitle: Describe the evidence that makes this package suspicious
+
+2.3 Investigation Flag 3: Supply Chain Impact Assessment
+1. Total packages in dependency tree
+   Type: Text
+   Subtitle: Number of direct and transitive dependencies
+
+2. Estimated remediation effort
+   Type: Multiple Choice
+   Options: < 2 hours, 2-8 hours, 1-3 days, 3-7 days, 1-2 weeks, > 2 weeks
+
+3. Business impact level
+   Type: Multiple Choice
+   Options: Critical Impact, High Impact, Medium Impact, Low Impact, No Impact
+
+4. Recommended action
+   Type: Multiple Choice
+   Options: Immediate Update, Planned Update, Alternative Package, Risk Acceptance, Further Investigation
+
+2.4 Investigation Flag 4: Comprehensive Threat Analysis
+1. Supply chain security score (0-100)
+   Type: Text
+   Subtitle: Overall security assessment score
+
+2. Primary threat category
+   Type: Multiple Choice
+   Options: Vulnerable Dependencies, Malicious Packages, License Violations, Outdated Components, Configuration Issues
+
+3. Secondary threats identified
+   Type: Multiple Choice (Allow multiple selections)
+   Options: Vulnerable Dependencies, Malicious Packages, License Violations, Outdated Components, Configuration Issues
+
+4. Strategic recommendation
+   Type: Long Text
+   Subtitle: Comprehensive remediation strategy for the development team
+
+
+Section 3: CTF 2 - Vulnerability Hunter (TotallySecure)
+======================================================
+
+3.1 Development Flag 1: Plugin Mastery & Security Discovery
+1. Total critical vulnerabilities found (using plugin filters)
+   Type: Text
+   Subtitle: Count found using plugin filtering functionality
+
+2. Most common vulnerability type (using plugin grouping)
+   Type: Multiple Choice
+   Options: SQL Injection, Cross-Site Scripting (XSS), Command Injection, Path Traversal, Insecure Deserialization, Weak Cryptography, Authentication Bypass, Authorization Issues, Other
+
+3. Plugin filter used for discovery
+   Type: Multiple Choice
+   Options: Severity Filter, Vulnerability Type Filter, File Pattern Filter, Confidence Level Filter, Custom Filter, Other
+
+4. Most critical file (using plugin navigation)
+   Type: Text
+   Subtitle: File with the highest priority security issues
+
+5. Navigation method used
+   Type: Multiple Choice
+   Options: Jump to Code, View Details, Group by File, Group by Type, Search Function, Filter Navigation
+
+6. Why this matters for daily development
+   Type: Long Text
+   Subtitle: How plugin mastery improves development workflow
+
+3.2 Development Flag 2: AI-Assisted Development & Real-time Detection
+1. Copilot-generated function type
+   Type: Multiple Choice
+   Options: Database Query Function, File Upload Function, Input Validation Function, Authentication Function, Other
+
+2. Vulnerability type ASCA detected in AI code
+   Type: Multiple Choice
+   Options: SQL Injection, Cross-Site Scripting (XSS), Command Injection, Path Traversal, Insecure File Upload, Input Validation Issues, Other
+
+3. ASCA detection time
+   Type: Multiple Choice
+   Options: < 5 seconds, 5-10 seconds, 10-30 seconds, 30-60 seconds, > 1 minute
+
+4. Copilot security code quality
+   Type: Multiple Choice
+   Options: Generated Secure Code, Generated Vulnerable Code, Mixed Results
+
+5. How ASCA + Copilot changes development
+   Type: Long Text
+   Subtitle: Impact of AI-assisted development with real-time security feedback
+
+3.3 Development Flag 3: AI-Powered Security Remediation
+1. Original vulnerability type remediated
+   Type: Multiple Choice
+   Options: SQL Injection, Cross-Site Scripting (XSS), Command Injection, Path Traversal, Insecure Deserialization, Weak Cryptography, Authentication Bypass, Authorization Issues, Other
+
+2. Copilot remediation method used
+   Type: Multiple Choice
+   Options: Right-click Context Menu, Copilot Chat Command, Security-focused Prompt, Code Suggestion, Manual Prompt Engineering
+
+3. Copilot's security fix quality assessment
+   Type: Multiple Choice
+   Options: Excellent, Good, Needs Improvement, Failed to Fix
+
+4. ASCA post-fix status
+   Type: Multiple Choice
+   Options: Vulnerability Resolved, Still Detected, New Issue Created, Partial Fix
+
+5. Best Copilot security prompt discovered
+   Type: Long Text
+   Subtitle: Most effective prompt for generating secure code or fixes
+
+3.4 Development Flag 4: Advanced Filtering & AI-Enhanced Workflow
+1. Most useful plugin filter discovered
+   Type: Multiple Choice
+   Options: Assigned to Me, New Since Last Scan, High Confidence, File Pattern Filter, Custom Severity Combo, Bulk Action Filter
+
+2. Custom filter setup description
+   Type: Long Text
+   Subtitle: Describe your optimized workflow configuration
+
+3. Best Copilot triaging insight received
+   Type: Long Text
+   Subtitle: Most valuable AI analysis for understanding vulnerabilities
+
+4. False positive identified and reasoning
+   Type: Long Text
+   Subtitle: Vulnerability type and developer justification for false positive
+
+5. Your AI-enhanced security workflow
+   Type: Long Text
+   Subtitle: Describe your integrated ASCA + Copilot + Plugin approach
+
+6. Daily development integration plan
+   Type: Long Text
+   Subtitle: How you'll apply these AI security skills in daily development
+
+
+Section 4: CTF 3 - Security Development Lead (TotallySecure)
+============================================================
+
+4.1 Development Flag 1: Codebase Security Baseline
+1. Total Critical security issues
+   Type: Text
+   Subtitle: Count of Critical severity findings
+
+2. Total High security issues
+   Type: Text
+   Subtitle: Count of High severity findings
+
+3. Total Medium security issues
+   Type: Text
+   Subtitle: Count of Medium severity findings
+
+4. Highest risk domain
+   Type: Multiple Choice
+   Options: SAST (Code), Direct Dependencies, Transitive Dependencies, Infrastructure/Configuration
+
+5. Most critical development issue
+   Type: Long Text
+   Subtitle: Describe the most serious security issue affecting development
+
+6. Development priority level
+   Type: Multiple Choice
+   Options: Critical, High, Medium, Low
+
+4.2 Development Flag 2: Multi-Domain Security Analysis
+1. Critical code vulnerability found
+   Type: Long Text
+   Subtitle: Describe the most serious code-level vulnerability
+
+2. Development impact of code vulnerability
+   Type: Multiple Choice
+   Options: Blocks Development, Major Refactor Needed, Moderate Changes, Minor Fix, No Impact
+
+3. Remediation complexity
+   Type: Multiple Choice
+   Options: High, Medium, Low
+
+4. Highest-risk package name
+   Type: Text
+   Subtitle: Most dangerous dependency identified
+
+5. Dependency risk factor
+   Type: Long Text
+   Subtitle: What makes this dependency risky?
+
+6. Supply chain impact level
+   Type: Multiple Choice
+   Options: Critical, High, Medium, Low
+
+7. Configuration risk identified
+   Type: Long Text
+   Subtitle: Describe any infrastructure/configuration vulnerabilities
+
+8. Infrastructure impact
+   Type: Multiple Choice
+   Options: High, Medium, Low, None
+
+4.3 Development Flag 3: Development Impact Assessment
+1. Highest development impact vulnerability
+   Type: Long Text
+   Subtitle: Which security issue most affects development workflow?
+
+2. Estimated remediation effort
+   Type: Multiple Choice
+   Options: < 2 hours, 2-8 hours, 1-3 days, > 3 days
+
+3. Code quality improvement potential
+   Type: Multiple Choice
+   Options: High, Medium, Low
+
+4. Development velocity impact
+   Type: Multiple Choice
+   Options: High, Medium, Low
+
+5. Code maintainability risk
+   Type: Multiple Choice
+   Options: High, Medium, Low
+
+6. Technical debt contribution
+   Type: Multiple Choice
+   Options: High, Medium, Low
+
+4.4 Development Flag 4: Sprint Security Integration Plan
+1. Priority 1 security issue
+   Type: Text
+   Subtitle: Top priority security issue for next sprint
+
+2. Priority 1 effort estimate (hours)
+   Type: Text
+   Subtitle: Development hours needed
+
+3. Priority 1 security improvement level
+   Type: Multiple Choice
+   Options: High, Medium, Low
+
+4. Priority 2 security issue
+   Type: Text
+
+5. Priority 2 effort estimate (hours)
+   Type: Text
+
+6. Priority 2 security improvement level
+   Type: Multiple Choice
+   Options: High, Medium, Low
+
+7. Priority 3 security issue
+   Type: Text
+
+8. Priority 3 effort estimate (hours)
+   Type: Text
+
+9. Priority 3 security improvement level
+   Type: Multiple Choice
+   Options: High, Medium, Low
+
+10. Immediate security fixes time allocation (hours)
+    Type: Text
+    Subtitle: Hours devoted to urgent security fixes
+
+11. Security-enhanced feature development time (hours)
+    Type: Text
+    Subtitle: Hours for building security into new features
+
+12. Code quality/security refactoring time (hours)
+    Type: Text
+    Subtitle: Hours for improving existing code security
+
+13. Security testing/validation time (hours)
+    Type: Text
+    Subtitle: Hours for security testing and verification
+
+4.5 Development Team Security Briefing
+1. Overall security level assessment
+   Type: Multiple Choice
+   Options: Critical, High, Medium, Low
+
+2. Recommended development action timeline
+   Type: Multiple Choice
+   Options: Immediate (This Sprint), Next Sprint, Monitor
+
+3. Most critical security issue for team
+   Type: Long Text
+   Subtitle: Top security concern for the development team
+
+4. Development hours needed total
+   Type: Text
+   Subtitle: Total development effort required
+
+5. Team members who should be involved
+   Type: Text
+   Subtitle: Number of developers needed
+
+6. External security consultation needed
+   Type: Multiple Choice
+   Options: Yes, No
+
+7. Expected code quality improvement
+   Type: Long Text
+   Subtitle: How will addressing these issues improve code quality?
+
+
+Section 5: Overall CTF Experience
+=================================
+
+5.1 Challenge Completion
+1. Which CTF challenges did you complete?
+   Type: Multiple Choice (Allow multiple selections)
+   Options: Supply Chain Detective, Vulnerability Hunter, Security Development Lead
+
+2. Total time spent on all CTFs
+   Type: Multiple Choice
+   Options: < 1 hour, 1-2 hours, 2-3 hours, 3-4 hours, > 4 hours
+
+3. Most valuable learning
+   Type: Long Text
+   Subtitle: What was the most important skill or insight you gained?
+
+4. Most challenging aspect
+   Type: Long Text
+   Subtitle: What part of the CTFs was most difficult?
+
+5. How will you apply these skills in development?
+   Type: Long Text
+   Subtitle: Describe how you'll integrate security into your daily development work
+
+6. Overall CTF experience rating
+   Type: Multiple Choice
+   Options: Excellent, Very Good, Good, Fair, Poor
+
+7. Additional feedback or suggestions
+   Type: Long Text
+   Subtitle: Any comments to improve the CTF experience? 
