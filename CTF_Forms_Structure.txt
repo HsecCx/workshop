@@ -13,136 +13,37 @@ Section 1: Participant Information
 Section 2: CTF 1 - Supply Chain Detective (TotallySecure)
 =========================================================
 
-2.1 Investigation Flag 1: Critical Package Analysis
-
-1. Highest severity vulnerability type found in TotallySecure's SCA Results
+1. Highest severity vulnerability type found in TotallySecure SCA Results
    Type: Multiple Choice
-   Options: Critical, High, Medium, Low
+   Options: Low, High, Medium, Critical
 
-2. Total critical vulnerability count found
+2. Critical Package Analysis - Total critical vulnerability count found
    Type: Text
    Subtitle: The value must be a number
 
 3. Of the High findings in the Maven-mysql:mysql-connector-java-5.1.26 package, what is the lowest CVSS 3 score?
    Type: Multiple Choice
-   Options: 7.0, 7.5, 8.0, 8.3
+   Options: 8.3, 7.5, 8.0, 7.0
 
 4. Transitive dependency analysis
    Type: Long Text
    Subtitle: A critical vulnerability (Cxdca8e59f-8bfe) is introduced into the project via the transitive package inflight@1.0.6. Which top-level dependency is responsible for introducing this vulnerable package? On which line is that dependency defined in the file?
 
-5. Advanced Filter Combination Challenge
+5. Filter combination methodology
    Type: Text
-   Subtitle: Use multiple simultaneous filters to find: Critical SCA vulnerabilities + High confidence + Introduced in last 30 days + Affecting .jar files only. How many results?
+   Subtitle: How many vulnerabilities in SCA are Direct Dependency vulnerabilities? (Hint: Filtering makes this much easier). The value must be a number
 
-11. Navigation Efficiency Test - Method
-    Type: Long Text
-    Subtitle: Document your exact navigation sequence and any shortcuts used
-
-12. Custom View Configuration
-    Type: Long Text
-    Subtitle: Create most efficient view for daily SCA triage. Format: Grouping method | Sort order | Default filters | Custom view name
-
-
-15. Search Query 1 Results
-    Type: Text
-    Subtitle: Search for vulnerabilities with "injection" in description. Search query used and results count.
-
-16. Search Query 2 Results
-    Type: Text
-    Subtitle: Search for vulnerabilities affecting packages with "spring" in name. Search query used and results count.
-
-17. Search Query 3 Results
-    Type: Text
-    Subtitle: Search for vulnerabilities from dependencies containing "apache". Search query used and results count.
-
-18. Most Effective Search Strategy
-    Type: Long Text
-    Subtitle: What was your most effective search strategy discovered during analysis?
-
-19. Bulk Actions Available
-    Type: Multiple Choice (Allow multiple selections)
-    Options: Mark as Not Exploitable, Assign to Developer, Export Results, Filter by Selection, Group Operations, Custom Status, Other
-
-20. Bulk Action Workflow Efficiency
-    Type: Long Text
-    Subtitle: Describe most efficient bulk action workflow and time saved vs individual actions
-
-21. Data Export Formats Available
-    Type: Multiple Choice (Allow multiple selections)
-    Options: JSON, CSV, XML, PDF, Excel, Text Report, Custom Format
-
-22. Best Export Format for Development Teams
-    Type: Multiple Choice
-    Options: JSON, CSV, XML, PDF, Excel, Text Report
-
-23. Export Format Analysis
-    Type: Long Text
-    Subtitle: Why is this the best format for development teams and what integration options exist?
-
-24. Real-time Scanning Behavior Analysis
-    Type: Long Text
-    Subtitle: Trigger new scan and document interface behavior during active scanning
-
-25. Performance Analysis with Large Result Sets
-    Type: Text
-    Subtitle: Test with large result sets. At what results count does performance degrade?
-
-26. Interface Optimization Strategies
-    Type: Long Text
-    Subtitle: What optimization settings did you find and recommended workflow for large projects?
-
-2.2 Investigation Flag 2: Malicious Package Detection  
-1. Suspicious package identified
-   Type: Text
-   Subtitle: Name of the potentially malicious package
-
-2. Suspicious indicators found
-   Type: Multiple Choice (Allow multiple selections)
-   Options: TypoSquatting, Unusual Dependencies, Suspicious Code Patterns, Unknown Maintainer, Recent Creation Date, Other
-
-3. Risk assessment level
-   Type: Multiple Choice
-   Options: Critical Risk, High Risk, Medium Risk, Low Risk, Not Malicious
-
-4. Evidence description
+6. CVE and risk score analysis
    Type: Long Text
-   Subtitle: Describe the evidence that makes this package suspicious
+   Subtitle: What is the CVE related to malicious package and what is its risk score (number, not category)?
 
-2.3 Investigation Flag 3: Supply Chain Impact Assessment
-1. Total packages in dependency tree
+7. Suspected Malware count
    Type: Text
-   Subtitle: Number of direct and transitive dependencies
+   Subtitle: What is the number of Suspected Malware in TotallySecure? The value must be a number
 
-2. Estimated remediation effort
-   Type: Multiple Choice
-   Options: < 2 hours, 2-8 hours, 1-3 days, 3-7 days, 1-2 weeks, > 2 weeks
-
-3. Business impact level
-   Type: Multiple Choice
-   Options: Critical Impact, High Impact, Medium Impact, Low Impact, No Impact
-
-4. Recommended action
-   Type: Multiple Choice
-   Options: Immediate Update, Planned Update, Alternative Package, Risk Acceptance, Further Investigation
-
-2.4 Investigation Flag 4: Comprehensive Threat Analysis
-1. Supply chain security score (0-100)
-   Type: Text
-   Subtitle: Overall security assessment score
-
-2. Primary threat category
-   Type: Multiple Choice
-   Options: Vulnerable Dependencies, Malicious Packages, License Violations, Outdated Components, Configuration Issues
-
-3. Secondary threats identified
-   Type: Multiple Choice (Allow multiple selections)
-   Options: Vulnerable Dependencies, Malicious Packages, License Violations, Outdated Components, Configuration Issues
-
-4. Strategic recommendation
+8. Malicious file hash analysis
    Type: Long Text
-   Subtitle: Comprehensive remediation strategy for the development team
-
+   Subtitle: If we look at the finding Cx9c42b5fe-7ada, what is the hash of the malicious file it downloads?
 
 Section 3: CTF 2 - Vulnerability Hunter (TotallySecure)
 ======================================================
@@ -415,7 +316,7 @@ Section 5: Overall CTF Experience
 
 2. Total time spent on all CTFs
    Type: Multiple Choice
-   Options: < 1 hour, 1-2 hours, 2-3 hours, 3-4 hours, > 4 hours
+   Options: < 30 minutes, 30-60 minutes, 1-1.5 hours, 1.5-2 hours, > 2 hours
 
 3. Most valuable learning
    Type: Long Text
