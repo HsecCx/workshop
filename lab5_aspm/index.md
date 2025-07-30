@@ -9,7 +9,7 @@ nav_order: 5
 {: .important-title }
 > Prerequisites
 >
-> We will be using our __totallysecureapp__ project, which is available at https://github.com/cxworkshops/totallysecureapp. If you have not already done so, clone the project to your local machine, as defined in [Lab 1](../lab1_setup/).
+> We will be using our __TotallySecure__ project, which is available at https://github.com/HsecCx/workshop-TotallySecure. If you have not already done so, clone the project to your local machine, as defined in [Lab 1](../lab1_setup/).
 
 ## Introduction
 
@@ -131,6 +131,9 @@ Filtering options are __dynamic__ - you'll only see toggles for risk types and t
 - __Sprint Planning__: Use risk scores to prioritize security work
 - __Release Decisions__: Review overall application risk posture
 - __Security Reviews__: Use ASPM as a comprehensive security dashboard
+
+{: .note }
+ASPM provides the "big picture" view that helps you understand not just individual vulnerabilities, but how they collectively impact your application's security posture. This holistic approach enables better decision-making and more effective risk management.
 
 ## Key Takeaways
 

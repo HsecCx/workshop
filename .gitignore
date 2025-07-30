@@ -3,3 +3,6 @@ CNAME
 _site*
 Gemfile*
 CTF_Forms_Structure.txt
+*.csv
+*.xlsx
+
