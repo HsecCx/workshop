@@ -1,6 +1,12 @@
 remote_theme: just-the-docs/just-the-docs@v0.7.0
 logo: "/assets/images/checkmarx_logo.png"
 
+# Favicon configuration
+favicon_ico: "/assets/images/cx_favicon_512x512-150x150.webp"
+favicon_32x32: "/assets/images/cx_favicon_512x512-150x150.webp"
+favicon_16x16: "/assets/images/cx_favicon_512x512-150x150.webp"
+apple_touch_icon: "/assets/images/cx_favicon_512x512-300x300.webp"
+
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
